@@ -88,37 +88,29 @@
 
     <!-- ---------- Projects ---------- -->
     <section class="pf-panel" role="tabpanel" id="panel-projects" aria-labelledby="tab-projects">
-
       <article class="pf-case" data-search="셀프 조회 power bi sql 반복 요청 필터 대시보드 bi">
         <span class="pf-avatar pf-avatar--tile" aria-hidden="true">01</span>
         <div>
           <div class="pf-case__eyebrow"><b>PROJECT 01</b><span>BI · 확산</span><span>·</span><span>SQL · Power BI</span></div>
           <h2 class="pf-case__title">반복 자료 요청을 Power BI 셀프 조회로 전환</h2>
-          <p class="pf-case__lead">CRM 팀장 퇴사 후 전사 CRM을 혼자 맡았습니다. 매번 엑셀로 집계하던 회원·매출 자료 요청을 현업이 직접 조회하는 화면으로 바꿨습니다.</p>
-          <dl class="pf-psr">
-            <dt>문제</dt><dd>1인 CRM에 반복 추출 요청 집중</dd>
-            <dt class="is-solve">해결</dt><dd>지표 기준 정리 + Power BI 조회 화면</dd>
-            <dt class="is-result">결과</dt><dd>현업 직접 조회, 분석·자동화 과제에 쓸 시간 확보</dd>
-          </dl>
-          <div class="pf-stats">
-            <div class="pf-stat"><span class="pf-stat__value">6<small>개</small></span><span class="pf-stat__label">현업이 고르는 조회 필터</span></div>
-            <div class="pf-stat"><span class="pf-stat__value">0<small>건</small></span><span class="pf-stat__label">발송 대상 중복 · 누락</span></div>
+          <div class="pf-psr">
+            <div><span class="pf-psr__label">문제</span><p>1인 CRM에 반복 추출 요청 집중</p></div>
+            <div class="is-solve"><span class="pf-psr__label">해결</span><p>지표 기준 정리 + Power BI 조회 화면</p></div>
+            <div class="is-result"><span class="pf-psr__label">결과</span><p>현업 직접 조회, 분석 시간 확보</p></div>
           </div>
-          <figure class="pf-case__media" >
-            <img src="assets/powerbi-self-service.jpg" alt="Power BI CRM 셀프 조회 화면. 연도·월·브랜드·유통·지역·매장코드 필터와 브랜드·유통·매장별 매출 차트" loading="lazy" width="1100" height="627">
-            <figcaption class="pf-case__caption">Power BI 셀프 조회 화면 · 수치·매장명 모자이크</figcaption>
-          </figure>
+          <div class="pf-stats"><div class="pf-stat"><span class="pf-stat__value">6<small>개</small></span><span class="pf-stat__label">현업이 고르는 조회 필터</span></div><div class="pf-stat"><span class="pf-stat__value">0<small>건</small></span><span class="pf-stat__label">발송 대상 중복 · 누락</span></div></div>
           <details class="pf-detail">
             <summary>어떻게 진행했나 <svg class="pf-icon"><use href="#i-chevron"/></svg></summary>
             <div class="pf-detail__body">
+              <p class="pf-detail__lead">CRM 팀장 퇴사 후 전사 CRM을 혼자 맡았습니다. 회원·매출 자료를 매번 엑셀로 집계하면 분석과 캠페인 기획에 쓸 시간이 줄었습니다.</p>
               <h4>수행</h4>
-              <ul>
-                <li>반복 요청 지표와 집계 기준 정리</li>
-                <li>SQL Server에 연결한 Power BI 조회 화면 구축</li>
-                <li>브랜드·지역·매장별 필터와 사용 기준을 현업에 제공</li>
-              </ul>
+              <ul><li>반복 요청 지표와 집계 기준 정리</li><li>SQL Server에 연결한 Power BI 조회 화면 구축</li><li>브랜드·지역·매장별 필터와 사용 기준을 현업에 제공</li></ul>
               <h4>이후</h4>
               <ul><li>반복 집계가 줄어 고객 분석, 업무 자동화, 시스템 개선 과제를 병행할 수 있는 기반 마련</li></ul>
+              <figure class="pf-case__media">
+                <img src="assets/powerbi-self-service.jpg" alt="Power BI CRM 셀프 조회 화면. 연도·월·브랜드·유통·지역·매장코드 필터와 브랜드·유통·매장별 매출 차트" loading="lazy" width="1100" height="627">
+                <figcaption class="pf-case__caption">Power BI 셀프 조회 화면 · 수치·매장명 모자이크</figcaption>
+              </figure>
             </div>
           </details>
         </div>
@@ -129,37 +121,27 @@
         <div>
           <div class="pf-case__eyebrow"><b>PROJECT 02</b><span>고객 분석</span><span>·</span><span>Python · Streamlit</span></div>
           <h2 class="pf-case__title">RFM · 코호트 기반 고객 분석 화면 구축</h2>
-          <p class="pf-case__lead">전산 원천 데이터를 새벽 배치로 Azure SQL에 적재하고, 같은 데이터를 Power BI와 Python 분석에 함께 사용했습니다.</p>
-          <dl class="pf-psr">
-            <dt>문제</dt><dd>재구매·이탈을 볼 기준이 없음</dd>
-            <dt class="is-solve">해결</dt><dd>RFM · 코호트 · LTV 화면 직접 구축</dd>
-            <dt class="is-result">결과</dt><dd>분석 결과로 캠페인 타깃 바로 추출</dd>
-          </dl>
-          <ol class="pf-steps" aria-label="데이터 흐름">
-            <li><b>POS·ERP·CRM</b>회원·구매·매장</li>
-            <li><b>새벽 배치</b>원천 데이터 적재</li>
-            <li><b>Azure SQL</b>조회·분석 기준</li>
-            <li><b>Power BI · Streamlit</b>현업 조회 · 고객 분석</li>
-          </ol>
-          <div class="pf-stats">
-            <div class="pf-stat"><span class="pf-stat__value">5<small>개</small></span><span class="pf-stat__label">직접 구축한 분석 화면</span></div>
-            <div class="pf-stat"><span class="pf-stat__value">SQL<small> 연결</small></span><span class="pf-stat__label">외부 개발 없이 직접 수정</span></div>
+          <div class="pf-psr">
+            <div><span class="pf-psr__label">문제</span><p>재구매·이탈을 볼 기준이 없음</p></div>
+            <div class="is-solve"><span class="pf-psr__label">해결</span><p>RFM · 코호트 · LTV 화면 직접 구축</p></div>
+            <div class="is-result"><span class="pf-psr__label">결과</span><p>분석 결과로 캠페인 타깃 바로 추출</p></div>
           </div>
-          <figure class="pf-case__media" >
-            <img src="assets/cohort-retention.jpg" alt="첫 구매월 기준 코호트 리텐션 히트맵 화면" loading="lazy" width="773" height="560">
-            <figcaption class="pf-case__caption">첫 구매월 코호트 리텐션 화면 · 수치 모자이크</figcaption>
-          </figure>
+          <div class="pf-stats"><div class="pf-stat"><span class="pf-stat__value">5<small>개</small></span><span class="pf-stat__label">직접 구축한 분석 화면</span></div><div class="pf-stat"><span class="pf-stat__value">SQL 연결</span><span class="pf-stat__label">외부 개발 없이 직접 수정</span></div></div>
           <details class="pf-detail">
             <summary>어떻게 진행했나 <svg class="pf-icon"><use href="#i-chevron"/></svg></summary>
             <div class="pf-detail__body">
+              <p class="pf-detail__lead">전산 원천 데이터를 새벽 배치로 Azure SQL에 적재하고, 같은 데이터를 Power BI와 Python 분석에 함께 사용했습니다.</p>
+              <h4>데이터 흐름</h4>
+              <ol class="pf-steps"><li><b>POS·ERP·CRM</b>회원·구매·매장</li><li><b>새벽 배치</b>원천 데이터 적재</li><li><b>Azure SQL</b>조회·분석 기준</li><li><b>Power BI · Streamlit</b>현업 조회 · 고객 분석</li></ol>
               <h4>분석 범위</h4>
               <div class="pf-chips"><span class="pf-chip">RFM</span><span class="pf-chip">재구매</span><span class="pf-chip">코호트 리텐션</span><span class="pf-chip">누적 구매액 기반 관측 LTV</span></div>
               <h4>수행</h4>
-              <ul>
-                <li>회원가입일이 아닌 실제 첫 구매월 기준으로 코호트를 정의</li>
-                <li>반복되는 CRM 타깃 추출을 재사용 가능한 SQL 로직으로 표준화</li>
-              </ul>
-              <p class="pf-note">표현 기준 — 새벽 배치 기준이며 실시간이 아니고, LTV는 예측값이 아닌 관측값입니다.</p>
+              <ul><li>회원가입일이 아닌 실제 첫 구매월 기준으로 코호트 정의</li><li>반복되는 CRM 타깃 추출을 재사용 가능한 SQL 로직으로 표준화</li></ul>
+              <figure class="pf-case__media">
+                <img src="assets/cohort-retention.jpg" alt="첫 구매월 기준 코호트 리텐션 히트맵 화면" loading="lazy" width="773" height="560">
+                <figcaption class="pf-case__caption">첫 구매월 코호트 리텐션 화면 · 수치 모자이크</figcaption>
+              </figure>
+              <p class="pf-note">새벽 배치 기준이며 실시간이 아니고, LTV는 예측값이 아닌 관측값입니다.</p>
             </div>
           </details>
         </div>
@@ -170,24 +152,21 @@
         <div>
           <div class="pf-case__eyebrow"><b>PROJECT 03</b><span>CRM 캠페인</span><span>·</span><span>SQL · 문자 · 카카오</span></div>
           <h2 class="pf-case__title">CRM 타깃 선정부터 구매 성과 확인까지 연결</h2>
-          <p class="pf-case__lead">발송으로 끝내지 않고, 쿠폰 사용과 구매·매출 데이터를 매칭해 다음 캠페인 조건에 반영했습니다.</p>
-          <ol class="pf-steps" aria-label="캠페인 운영 흐름">
-            <li><b>대상 기준</b>구매 이력·수신동의를 SQL로 반영</li>
-            <li><b>발송</b>문자·카카오와 쿠폰 혜택</li>
-            <li><b>성과 확인</b>쿠폰 사용과 구매·매출 매칭</li>
-            <li><b>후속 운영</b>타깃·혜택 조건 재반영</li>
-          </ol>
+          <div class="pf-psr">
+            <div><span class="pf-psr__label">문제</span><p>매번 반복되는 CRM 타깃 추출</p></div>
+            <div class="is-solve"><span class="pf-psr__label">해결</span><p>대상 기준 SQL화 + 쿠폰·구매 데이터 매칭</p></div>
+            <div class="is-result"><span class="pf-psr__label">결과</span><p>재사용 SQL로 타깃 추출 표준화</p></div>
+          </div>
           <details class="pf-detail">
             <summary>어떻게 진행했나 <svg class="pf-icon"><use href="#i-chevron"/></svg></summary>
             <div class="pf-detail__body">
+              <p class="pf-detail__lead">발송으로 끝내지 않고 쿠폰 사용과 구매·매출 데이터를 매칭해 다음 캠페인 조건에 반영했습니다.</p>
+              <h4>캠페인 운영 흐름</h4>
+              <ol class="pf-steps"><li><b>대상 기준</b>구매 이력·수신동의를 SQL로 반영</li><li><b>발송</b>문자·카카오와 쿠폰 혜택</li><li><b>성과 확인</b>쿠폰 사용과 구매·매출 매칭</li><li><b>후속 운영</b>타깃·혜택 조건 재반영</li></ol>
               <h4>온·오프라인 연계 멤버십 이벤트</h4>
-              <ul>
-                <li>홈페이지에서 참여한 회원의 CRM 대상 조건을 정하고 매장 사용 데이터와 연결</li>
-                <li>CRM 대행사, 홈페이지 유지보수사, 전산팀 사이의 일정과 데이터 기준 조율</li>
-              </ul>
+              <ul><li>홈페이지에서 참여한 회원의 CRM 대상 조건을 정하고 매장 사용 데이터와 연결</li><li>CRM 대행사, 홈페이지 유지보수사, 전산팀 사이의 일정과 데이터 기준 조율</li></ul>
             </div>
           </details>
-          <div class="pf-case__foot"><div class="pf-chips"><span class="pf-chip pf-chip--result">재사용 SQL로 타깃 추출 표준화</span></div></div>
         </div>
       </article>
 
@@ -196,32 +175,20 @@
         <div>
           <div class="pf-case__eyebrow"><b>PROJECT 04</b><span>요구사항 → 정책</span><span>·</span><span>PM</span></div>
           <h2 class="pf-case__title">전사 마일리지 소멸 정책 수립 및 첫 실행</h2>
-          <p class="pf-case__lead">통합 멤버십 도입 후 규정만 있고 실행되지 않던 마일리지 소멸을 운영 과제로 정리해, CRM이 PM을 맡아 첫 시행까지 이끌었습니다.</p>
-          <dl class="pf-psr">
-            <dt>문제</dt><dd>규정만 있고 시스템이 없어 부채 누적</dd>
-            <dt class="is-solve">해결</dt><dd>기준 정의, 재무·전산·대행사 조율</dd>
-            <dt class="is-result">결과</dt><dd>첫 소멸 실행 + 고객 조회 페이지 오픈</dd>
-          </dl>
-          <div class="pf-stats">
-            <div class="pf-stat"><span class="pf-stat__value">14만+<small>명</small></span><span class="pf-stat__label">첫 소멸 대상</span></div>
-            <div class="pf-stat"><span class="pf-stat__value">약 2.5<small>억 원</small></span><span class="pf-stat__label">소멸 처리 잔액</span></div>
+          <div class="pf-psr">
+            <div><span class="pf-psr__label">문제</span><p>규정만 있고 시스템이 없어 부채 누적</p></div>
+            <div class="is-solve"><span class="pf-psr__label">해결</span><p>기준 정의, 재무·전산·대행사 조율</p></div>
+            <div class="is-result"><span class="pf-psr__label">결과</span><p>첫 소멸 실행 + 고객 조회 페이지</p></div>
           </div>
-          <ol class="pf-steps" aria-label="소멸 진행 과정">
-            <li><b>요구사항 정의</b>CRM</li>
-            <li><b>정책 합의</b>재무</li>
-            <li><b>시스템 구현</b>전산</li>
-            <li><b>안내 발송</b>대행사</li>
-            <li><b>테스트 · 검증</b>CRM</li>
-            <li><b>고객 조회 페이지</b>전산</li>
-          </ol>
+          <div class="pf-stats"><div class="pf-stat"><span class="pf-stat__value">14만+<small>명</small></span><span class="pf-stat__label">첫 소멸 대상</span></div><div class="pf-stat"><span class="pf-stat__value">약 2.5<small>억 원</small></span><span class="pf-stat__label">소멸 처리 잔액</span></div></div>
           <details class="pf-detail">
             <summary>어떻게 진행했나 <svg class="pf-icon"><use href="#i-chevron"/></svg></summary>
             <div class="pf-detail__body">
-              <ul>
-                <li>소멸 대상과 제외 조건 정리</li>
-                <li>대상자와 소멸액 사전 시뮬레이션으로 검증</li>
-                <li>재무·영업·전산·대행사 일정 정리 후 고객 고지와 소멸 결과 확인</li>
-              </ul>
+              <p class="pf-detail__lead">통합 멤버십 도입 후 규정만 있고 실행되지 않던 마일리지 소멸을 운영 과제로 정리해, CRM이 PM을 맡아 첫 시행까지 이끌었습니다.</p>
+              <h4>진행 과정 · 담당</h4>
+              <ol class="pf-steps"><li><b>요구사항 정의</b>CRM</li><li><b>정책 합의</b>재무</li><li><b>시스템 구현</b>전산</li><li><b>안내 발송</b>대행사</li><li><b>테스트 · 검증</b>CRM</li><li><b>고객 조회 페이지</b>전산</li></ol>
+              <h4>수행</h4>
+              <ul><li>소멸 대상과 제외 조건 정리</li><li>대상자와 소멸액 사전 시뮬레이션으로 검증</li><li>재무·영업·전산·대행사 일정 정리 후 고객 고지와 소멸 결과 확인</li></ul>
               <p class="pf-note">약 2.5억 원은 소멸 처리된 마일리지 잔액이며, 비용 절감액이나 영업이익으로 표현하지 않습니다.</p>
             </div>
           </details>
@@ -233,28 +200,20 @@
         <div>
           <div class="pf-case__eyebrow"><b>PROJECT 05</b><span>분석 → 운영 기준</span><span>·</span><span>SQL</span></div>
           <h2 class="pf-case__title">어뷰징 고객 선별 기준 및 점검 프로세스 수립</h2>
-          <p class="pf-case__lead">구매 패턴만으로 바로 정지하지 않고, 영업부와 매장 확인을 거쳐 오판을 줄인 뒤 운영 기준으로 남겼습니다.</p>
-          <dl class="pf-psr">
-            <dt>문제</dt><dd>혜택 대상에 이상 계정이 섞임</dd>
-            <dt class="is-solve">해결</dt><dd>구매 패턴 4단계 분류 + 현장 확인</dd>
-            <dt class="is-result">결과</dt><dd>반복 관리 가능한 운영 기준 수립</dd>
-          </dl>
-          <div class="pf-stats">
-            <div class="pf-stat"><span class="pf-stat__value">1,080<small>명</small></span><span class="pf-stat__label">데이터로 선별한 의심 계정</span></div>
-            <div class="pf-stat"><span class="pf-stat__value">828<small>명</small></span><span class="pf-stat__label">확인 후 비활성화</span></div>
+          <div class="pf-psr">
+            <div><span class="pf-psr__label">문제</span><p>혜택 대상에 이상 계정이 섞임</p></div>
+            <div class="is-solve"><span class="pf-psr__label">해결</span><p>구매 패턴 4단계 분류 + 현장 확인</p></div>
+            <div class="is-result"><span class="pf-psr__label">결과</span><p>반복 관리 가능한 운영 기준 수립</p></div>
           </div>
-          <ol class="pf-steps" aria-label="점검 흐름">
-            <li><b>CRM 추출</b></li><li><b>영업 검토</b></li><li><b>매장 소명</b></li><li><b>계정 조치</b></li><li><b>후속 관리</b></li>
-          </ol>
+          <div class="pf-stats"><div class="pf-stat"><span class="pf-stat__value">1,080<small>명</small></span><span class="pf-stat__label">데이터로 선별한 의심 계정</span></div><div class="pf-stat"><span class="pf-stat__value">828<small>명</small></span><span class="pf-stat__label">확인 후 비활성화</span></div></div>
           <details class="pf-detail">
             <summary>어떻게 진행했나 <svg class="pf-icon"><use href="#i-chevron"/></svg></summary>
             <div class="pf-detail__body">
+              <p class="pf-detail__lead">구매 패턴만으로 바로 정지하지 않고, 영업부와 매장 확인을 거쳐 오판을 줄인 뒤 운영 기준으로 남겼습니다.</p>
+              <h4>점검 흐름</h4>
+              <ol class="pf-steps"><li><b>CRM 추출</b></li><li><b>영업 검토</b></li><li><b>매장 소명</b></li><li><b>계정 조치</b></li><li><b>후속 관리</b></li></ol>
               <h4>분석 기준</h4>
-              <ul>
-                <li>전화번호당 계정 수</li>
-                <li>고객별 연간 전표와 매출</li>
-                <li>구매 매장과 반복 구매 패턴</li>
-              </ul>
+              <ul><li>전화번호당 계정 수</li><li>고객별 연간 전표와 매출</li><li>구매 매장과 반복 구매 패턴</li></ul>
               <h4>분류</h4>
               <div class="pf-chips"><span class="pf-chip">고위험</span><span class="pf-chip">의심</span><span class="pf-chip">관찰</span><span class="pf-chip">정상</span></div>
               <h4>함께 운영</h4>
@@ -269,30 +228,24 @@
         <div>
           <div class="pf-case__eyebrow"><b>PROJECT 06</b><span>개인 프로젝트</span><span>·</span><span>Python · Streamlit · OpenAI API</span></div>
           <h2 class="pf-case__title">리테일 CRM 정책 벤치마크 DB 구축</h2>
-          <p class="pf-case__lead">매번 일회성이던 경쟁사 정책 조사를 공식 출처 기반 데이터베이스로 만들고, 변경 이력까지 추적하는 대시보드로 구현했습니다.</p>
-          <dl class="pf-psr">
-            <dt>문제</dt><dd>경쟁사 정책 조사가 매번 일회성</dd>
-            <dt class="is-solve">해결</dt><dd>공식 출처 수집 + 공통 기준 표준화</dd>
-            <dt class="is-result">결과</dt><dd>변경 이력까지 추적하는 대시보드</dd>
-          </dl>
-          <div class="pf-stats">
-            <div class="pf-stat"><span class="pf-stat__value">72<small>건</small></span><span class="pf-stat__label">검증한 CRM 사례</span></div>
-            <div class="pf-stat"><span class="pf-stat__value">49<small>개</small></span><span class="pf-stat__label">공식 출처</span></div>
+          <div class="pf-psr">
+            <div><span class="pf-psr__label">문제</span><p>경쟁사 정책 조사가 매번 일회성</p></div>
+            <div class="is-solve"><span class="pf-psr__label">해결</span><p>공식 출처 수집 + 공통 기준 표준화</p></div>
+            <div class="is-result"><span class="pf-psr__label">결과</span><p>변경 이력까지 추적하는 대시보드</p></div>
           </div>
-          <figure class="pf-case__media" >
-            <img src="assets/crm-intelligence.jpg" alt="Retail CRM Intelligence 대시보드. CRM Insight, Company Intelligence, Change Radar 탭과 기업별 CRM 엔진 카드" loading="lazy" width="1363" height="936">
-            <figcaption class="pf-case__caption">Retail CRM Intelligence · 공식 공개 자료 기반</figcaption>
-          </figure>
+          <div class="pf-stats"><div class="pf-stat"><span class="pf-stat__value">72<small>건</small></span><span class="pf-stat__label">검증한 CRM 사례</span></div><div class="pf-stat"><span class="pf-stat__value">49<small>개</small></span><span class="pf-stat__label">공식 출처</span></div></div>
           <details class="pf-detail">
             <summary>어떻게 진행했나 <svg class="pf-icon"><use href="#i-chevron"/></svg></summary>
             <div class="pf-detail__body">
-              <ol class="pf-steps" aria-label="구현 흐름" style="margin-top:0">
-                <li><b>Notion DB</b>사례 수집</li><li><b>Python · Pandas</b>공통 기준 표준화</li><li><b>Streamlit</b>기업별 비교</li><li><b>Change Log</b>변경 모니터링</li>
-              </ol>
-              <ul style="margin-top:12px">
-                <li>OpenAI API 요약 결과는 원문과 대조해 검증</li>
-                <li>경쟁사 SNS 분석: 웹 크롤링으로 최근 90일 게시물과 캠페인 이미지를 수집, 게시 빈도와 콘텐츠 형식을 비교해 자사 계정 운영 개선안을 PR 담당자에게 전달</li>
-              </ul>
+              <p class="pf-detail__lead">매번 일회성이던 경쟁사 정책 조사를 공식 출처 기반 데이터베이스로 만들고, 변경 이력까지 추적하는 대시보드로 구현했습니다.</p>
+              <h4>구현 흐름</h4>
+              <ol class="pf-steps"><li><b>Notion DB</b>사례 수집</li><li><b>Python · Pandas</b>공통 기준 표준화</li><li><b>Streamlit</b>기업별 비교</li><li><b>Change Log</b>변경 모니터링</li></ol>
+              <h4>수행</h4>
+              <ul><li>OpenAI API 요약 결과는 원문과 대조해 검증</li><li>경쟁사 SNS 분석: 웹 크롤링으로 최근 90일 게시물과 캠페인 이미지를 수집, 게시 빈도와 콘텐츠 형식을 비교해 자사 계정 운영 개선안을 PR 담당자에게 전달</li></ul>
+              <figure class="pf-case__media">
+                <img src="assets/crm-intelligence.jpg" alt="Retail CRM Intelligence 대시보드. CRM Insight, Company Intelligence, Change Radar 탭과 기업별 CRM 엔진 카드" loading="lazy" width="1363" height="936">
+                <figcaption class="pf-case__caption">Retail CRM Intelligence · 공식 공개 자료 기반</figcaption>
+              </figure>
               <p class="pf-note">공개 프로토타입이며 내부 CRM 데이터와 분리되어 있습니다.</p>
             </div>
           </details>
