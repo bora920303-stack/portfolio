@@ -166,14 +166,37 @@
 .pf-case__caption { display: block; padding: var(--space-2) var(--space-3); font-size: 13px; line-height: 18px; color: var(--muted); border-top: 1px solid var(--line); }
 .pf-case__foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-2); margin-top: var(--space-3); }
 
-/* Problem · Solution · Result: three boxes side by side (stack under 640px) */
-.pf-psr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-2); margin-top: var(--space-3); }
-.pf-psr > div { padding: var(--space-2) var(--space-3) var(--space-3); border: 1px solid var(--line); border-radius: var(--radius-sm); }
-.pf-psr > div.is-result { background: var(--lime-tint); border-color: transparent; }
-.pf-psr__label { display: block; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.04em; color: var(--muted); }
-.pf-psr .is-solve .pf-psr__label { color: var(--plum); }
-.pf-psr .is-result .pf-psr__label { color: var(--ink); }
-.pf-psr p { margin: var(--space-1) 0 0; font-size: 14px; line-height: 20px; font-weight: 500; color: var(--ink); }
+/* ---------- Post: a case written as an X post ---------- */
+.pf-post__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 var(--space-1); font-size: 15px; line-height: 20px; color: var(--muted); }
+.pf-post__head b { color: var(--ink); font-weight: 700; margin-right: var(--space-1); }
+.pf-post__headline { margin: 2px 0 var(--space-2); font-size: 15px; line-height: 22px; font-weight: 700; color: var(--ink); }
+.pf-post__line { display: flex; gap: var(--space-2); margin: 2px 0 0; font-size: 15px; line-height: 22px; color: var(--ink); }
+.pf-post__line b { flex: none; font-weight: 700; color: var(--muted); }
+.pf-post__line b::after { content: " /"; font-weight: 400; }
+.pf-post__line.is-how b { color: var(--plum); }
+.pf-post__line.is-result b { color: var(--ink); }
+.pf-post__line.is-result { font-weight: 700; }
+
+/* ---------- Media: the attached reference image under a post ---------- */
+.pf-media { margin: var(--space-3) 0 0; border: 1px solid var(--line); border-radius: var(--radius-md); overflow: hidden; background: var(--bg); }
+.pf-media__head { padding: var(--space-4) var(--space-4) var(--space-3); border-bottom: 1px solid var(--line); }
+.pf-media__head span { display: block; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.04em; color: var(--plum); }
+.pf-media__head strong { display: block; margin-top: 2px; font-size: 22px; line-height: 28px; font-weight: 800; letter-spacing: -0.01em; color: var(--ink); }
+.pf-media__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-3); padding: var(--space-3) var(--space-4); }
+.pf-media__grid.has-shot { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); align-items: start; }
+.pf-media__table { width: 100%; border-collapse: collapse; font-size: 13px; line-height: 18px; }
+.pf-media__table th { padding: var(--space-2) var(--space-2) var(--space-2) 0; text-align: left; font-weight: 500; color: var(--muted); border-bottom: 1px solid var(--line); vertical-align: top; }
+.pf-media__table td { padding: var(--space-2) 0; text-align: right; font-weight: 800; color: var(--ink); border-bottom: 1px solid var(--line); }
+.pf-media__table tr:first-child td { color: var(--plum); font-size: 17px; }
+.pf-media__table tr:last-child th, .pf-media__table tr:last-child td { border-bottom: 0; }
+.pf-media__shot { border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; background: var(--surface-subtle); }
+.pf-media__shot img { display: block; width: 100%; height: auto; }
+.pf-media__shot span { display: block; padding: var(--space-1) var(--space-2); font-size: 12px; line-height: 16px; color: var(--muted); border-top: 1px solid var(--line); }
+.pf-media__rules { margin: 0 var(--space-4) var(--space-4); padding: var(--space-3) var(--space-4); border-radius: var(--radius-sm); background: var(--surface-tint); }
+.pf-media__rules b { display: block; font-size: 13px; line-height: 18px; font-weight: 800; color: var(--ink); }
+.pf-media__steps { list-style: none; counter-reset: ms; margin: var(--space-1) 0 0; padding: 0; }
+.pf-media__steps li { counter-increment: ms; display: flex; gap: var(--space-2); font-size: 13px; line-height: 20px; color: var(--ink-2); }
+.pf-media__steps li::before { content: counter(ms, decimal-leading-zero); flex: none; font-weight: 700; color: var(--plum); }
 
 /* ---------- Stat ---------- */
 .pf-stats { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-6); margin-top: var(--space-3); }
@@ -287,8 +310,8 @@ body { margin: 0; background: var(--bg); }
   .pf-fit { grid-template-columns: 1fr; }
   .pf-case { grid-template-columns: 1fr; }
   .pf-case > .pf-avatar { display: none; }
-  .pf-psr { grid-template-columns: 1fr; }
-  .pf-psr > div { display: grid; grid-template-columns: 36px 1fr; gap: var(--space-2); padding: var(--space-2) var(--space-3); }
-  .pf-psr p { margin: 0; }
-  .pf-psr__label { line-height: 20px; }
+  .pf-case.pf-post { grid-template-columns: 40px minmax(0, 1fr); }
+  .pf-case.pf-post > .pf-avatar { display: inline-flex; }
+  .pf-media__grid.has-shot { grid-template-columns: 1fr; }
+  .pf-media__shot { order: -1; }
 }
