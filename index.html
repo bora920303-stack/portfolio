@@ -51,7 +51,7 @@
   <main class="pf-shell__feed" id="top">
     <div class="pf-feedhead">
       <div class="pf-feedhead__title">임보라</div>
-      <div class="pf-feedhead__sub">CRM 데이터 포트폴리오 · 사례 6건</div>
+      <div class="pf-feedhead__sub">CRM 데이터 포트폴리오 · 사례 10건</div>
     </div>
 
     <section class="pf-profile" aria-label="프로필">
@@ -88,7 +88,13 @@
 
     <!-- ---------- Projects ---------- -->
     <section class="pf-panel" role="tabpanel" id="panel-projects" aria-labelledby="tab-projects">
-      <article class="pf-case pf-post" data-search="셀프 조회 power bi sql 반복 요청 필터 대시보드 bi">
+      <div class="pf-filter" role="group" aria-label="분야 필터">
+        <button class="pf-filter__btn" aria-pressed="true" data-cat="all">전체 <span>10</span></button>
+        <button class="pf-filter__btn" aria-pressed="false" data-cat="crm">CRM · 데이터 <span>7</span></button>
+        <button class="pf-filter__btn" aria-pressed="false" data-cat="md">커머스 · MD <span>2</span></button>
+        <button class="pf-filter__btn" aria-pressed="false" data-cat="mkt">마케팅 · 광고 <span>1</span></button>
+      </div>
+      <article class="pf-case pf-post" data-cat="crm" data-search="셀프 조회 power bi sql 반복 요청 필터 대시보드 bi">
         <span class="pf-avatar" aria-hidden="true">LB</span>
         <div>
           <div class="pf-post__head"><b>임보라</b><span>PROJECT 01</span><span>·</span><span>BI · 확산</span></div>
@@ -112,7 +118,7 @@
         </div>
       </article>
 
-      <article class="pf-case pf-post" data-search="고객 분석 rfm 코호트 리텐션 ltv python streamlit azure sql 배치 재구매">
+      <article class="pf-case pf-post" data-cat="crm" data-search="고객 분석 rfm 코호트 리텐션 ltv python streamlit azure sql 배치 재구매">
         <span class="pf-avatar" aria-hidden="true">LB</span>
         <div>
           <div class="pf-post__head"><b>임보라</b><span>PROJECT 02</span><span>·</span><span>고객 분석</span></div>
@@ -139,7 +145,7 @@
         </div>
       </article>
 
-      <article class="pf-case pf-post" data-search="crm 캠페인 타깃 문자 카카오 쿠폰 멤버십 이벤트 sql 성과">
+      <article class="pf-case pf-post" data-cat="crm" data-search="crm 캠페인 타깃 문자 카카오 쿠폰 멤버십 이벤트 sql 성과">
         <span class="pf-avatar" aria-hidden="true">LB</span>
         <div>
           <div class="pf-post__head"><b>임보라</b><span>PROJECT 03</span><span>·</span><span>CRM 캠페인</span></div>
@@ -163,7 +169,7 @@
         </div>
       </article>
 
-      <article class="pf-case pf-post" data-search="마일리지 소멸 정책 pm 재무 전산 대행사 멤버십 요구사항">
+      <article class="pf-case pf-post" data-cat="crm" data-search="마일리지 소멸 정책 pm 재무 전산 대행사 멤버십 요구사항">
         <span class="pf-avatar" aria-hidden="true">LB</span>
         <div>
           <div class="pf-post__head"><b>임보라</b><span>PROJECT 04</span><span>·</span><span>요구사항 → 정책</span></div>
@@ -188,7 +194,7 @@
         </div>
       </article>
 
-      <article class="pf-case pf-post" data-search="어뷰징 이상계정 비활성화 vip 매장 영업 sql 운영 기준">
+      <article class="pf-case pf-post" data-cat="crm" data-search="어뷰징 이상계정 비활성화 vip 매장 영업 sql 운영 기준">
         <span class="pf-avatar" aria-hidden="true">LB</span>
         <div>
           <div class="pf-post__head"><b>임보라</b><span>PROJECT 05</span><span>·</span><span>분석 → 운영 기준</span></div>
@@ -214,7 +220,7 @@
         </div>
       </article>
 
-      <article class="pf-case pf-post" data-search="retail crm intelligence 벤치마크 openai api streamlit 크롤링 playwright 경쟁사 sns 개인 프로젝트">
+      <article class="pf-case pf-post" data-cat="crm" data-search="retail crm intelligence 벤치마크 openai api streamlit 크롤링 playwright 경쟁사 sns 개인 프로젝트">
         <span class="pf-avatar" aria-hidden="true">LB</span>
         <div>
           <div class="pf-post__head"><b>임보라</b><span>PROJECT 06</span><span>·</span><span>개인 프로젝트</span></div>
@@ -232,8 +238,100 @@
             <div class="pf-detail__body">
               <p class="pf-detail__lead">매번 일회성이던 경쟁사 정책 조사를 공식 출처 기반 데이터베이스로 만들고, 변경 이력까지 추적하는 대시보드로 구현했습니다.</p>
               <h4>수행</h4>
-              <ul><li>OpenAI API 요약 결과는 원문과 대조해 검증</li><li>경쟁사 SNS 분석: 웹 크롤링으로 최근 90일 게시물과 캠페인 이미지를 수집, 게시 빈도와 콘텐츠 형식을 비교해 자사 계정 운영 개선안을 PR 담당자에게 전달</li></ul>
+              <ul><li>OpenAI API 요약 결과는 원문과 대조해 검증</li></ul>
               <p class="pf-note">공개 프로토타입이며 내부 CRM 데이터와 분리되어 있습니다.</p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="pf-case pf-post" data-cat="crm" data-search="경쟁사 sns 크롤링 playwright python 게시물 캠페인 이미지 pr 인스타그램 콘텐츠">
+        <span class="pf-avatar" aria-hidden="true">LB</span>
+        <div>
+          <div class="pf-post__head"><b>임보라</b><span>PROJECT 07</span><span>·</span><span>외부 데이터 수집</span></div>
+          <h2 class="pf-post__headline">경쟁 브랜드 SNS를 크롤링으로 모아 자사 계정 개선안을 만들었습니다.</h2>
+          <p class="pf-post__line"><b>문제</b>경쟁 브랜드 SNS 운영을 비교할 데이터가 없음</p>
+          <p class="pf-post__line is-how"><b>방법</b>웹 크롤링으로 게시물·캠페인 이미지 수집</p>
+          <p class="pf-post__line is-result"><b>결과</b>게시 빈도·콘텐츠 형식 비교해 개선안 전달</p>
+          <figure class="pf-media" aria-label="PROJECT 07 요약 이미지">
+            <div class="pf-media__head"><span>PROJECT 07 · 인디에프 · Python · Playwright</span><strong>경쟁사 SNS 분석</strong></div>
+            <div class="pf-media__grid"><table class="pf-media__table"><tbody><tr><th scope="row">수집 기간</th><td>최근 90일</td></tr><tr><th scope="row">수집 대상</th><td>게시물 · 캠페인 이미지</td></tr><tr><th scope="row">비교 기준</th><td>게시 빈도 · 콘텐츠 형식</td></tr></tbody></table></div>
+            <div class="pf-media__rules"><b>진행 방식</b><ol class="pf-media__steps"><li>Python·Playwright로 게시물과 이미지 수집</li><li>브랜드별 게시 빈도와 콘텐츠 형식 비교</li><li>자사 계정 운영 개선안을 PR 담당자에게 전달</li></ol></div>
+          </figure>
+          <details class="pf-detail">
+            <summary>어떻게 진행했나 <svg class="pf-icon"><use href="#i-chevron"/></svg></summary>
+            <div class="pf-detail__body">
+              <p class="pf-detail__lead">공개 자료 조사도 매번 새로 하지 않도록, 경쟁 브랜드의 최근 게시물과 캠페인 이미지를 크롤링해 비교 가능한 데이터로 만들었습니다.</p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="pf-case pf-post" data-cat="mkt" data-search="메가존 쌤소나이트 ga utm a/b 테스트 f1 페이스북 광고 roas 전환율 demandware 기획전 ae">
+        <span class="pf-avatar" aria-hidden="true">LB</span>
+        <div>
+          <div class="pf-post__head"><b>임보라</b><span>PROJECT 08</span><span>·</span><span>캠페인 성과 분석</span></div>
+          <h2 class="pf-post__headline">쌤소나이트 캠페인을 UTM·GA로 쪼개 보고 소재를 A/B 테스트했습니다.</h2>
+          <p class="pf-post__line"><b>문제</b>프로모션·소재별 성과를 나눠 보기 어려움</p>
+          <p class="pf-post__line is-how"><b>방법</b>프로모션별 UTM 설정 + GA 분석 + A/B 테스트</p>
+          <p class="pf-post__line is-result"><b>결과</b>F1 광고 ROAS 467% → 645%</p>
+          <figure class="pf-media" aria-label="PROJECT 08 요약 이미지">
+            <div class="pf-media__head"><span>PROJECT 08 · 메가존 · GA · UTM · Meta</span><strong>쌤소나이트 캠페인 분석</strong></div>
+            <div class="pf-media__grid"><table class="pf-media__table"><tbody><tr><th scope="row">F1 광고 ROAS</th><td>467% → 645%</td></tr><tr><th scope="row">첫 구매 전환율</th><td>51% 증가</td></tr><tr><th scope="row">오픈한 기획전</th><td>35건+</td></tr></tbody></table></div>
+            <div class="pf-media__rules"><b>진행 방식</b><ol class="pf-media__steps"><li>프로모션별 UTM 설정</li><li>GA 기반 유입·전환 분석</li><li>광고 소재·랜딩페이지 A/B 테스트</li><li>클라이언트 개선안 제안과 정기 리포트</li></ol></div>
+          </figure>
+          <details class="pf-detail">
+            <summary>어떻게 진행했나 <svg class="pf-icon"><use href="#i-chevron"/></svg></summary>
+            <div class="pf-detail__body">
+              <p class="pf-detail__lead">종합광고대행사 AE로 Demandware 기반 쌤소나이트 공식몰과 DMC미디어 페이스북 광고 솔루션(F1)을 운영하며, 캠페인 성과를 데이터로 설명하고 개선안을 제안했습니다.</p>
+              <h4>함께 한 일</h4>
+              <ul><li>캠페인 기획과 디자인·퍼블리싱·미디어렙사·클라이언트 업무 조율</li><li>F1 광고 소재 기획·제작과 집행 관리</li></ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="pf-case pf-post" data-cat="md" data-search="체리부로 쿠팡 로켓배송 자사몰 파스토 3pl 풀필먼트 erp 사방넷 wms 컬리 정육각 b2b 온라인 md">
+        <span class="pf-avatar" aria-hidden="true">LB</span>
+        <div>
+          <div class="pf-post__head"><b>임보라</b><span>PROJECT 09</span><span>·</span><span>채널 · 물류 구축</span></div>
+          <h2 class="pf-post__headline">연 60억 원 온라인 사업의 채널과 물류 체계를 넓혔습니다.</h2>
+          <p class="pf-post__line"><b>문제</b>채널이 늘며 주문·출고·재고 관리 부담 증가</p>
+          <p class="pf-post__line is-how"><b>방법</b>자사몰 런칭, 쿠팡 로켓배송·파스토 3PL 도입</p>
+          <p class="pf-post__line is-result"><b>결과</b>주문·출고·재고·정산 데이터가 연결된 운영 체계</p>
+          <figure class="pf-media" aria-label="PROJECT 09 요약 이미지">
+            <div class="pf-media__head"><span>PROJECT 09 · 체리부로 · Coupang · Naver · ERP · WMS</span><strong>온라인 채널 · 풀필먼트</strong></div>
+            <div class="pf-media__grid"><table class="pf-media__table"><tbody><tr><th scope="row">연간 온라인 매출</th><td>약 60억 원</td></tr><tr><th scope="row">신규 채널</th><td>자사몰 · 쿠팡 로켓배송</td></tr><tr><th scope="row">물류</th><td>네이버 파스토 3PL</td></tr></tbody></table></div>
+            <div class="pf-media__rules"><b>구축 흐름</b><ol class="pf-media__steps"><li>컬리·정육각 B2B 직매입, 오픈마켓 운영</li><li>자사몰 런칭과 쿠팡 로켓배송 입점</li><li>네이버 파스토 3PL 연계</li><li>ERP·사방넷·3PL·WMS 데이터 연계</li></ol></div>
+          </figure>
+          <details class="pf-detail">
+            <summary>어떻게 진행했나 <svg class="pf-icon"><use href="#i-chevron"/></svg></summary>
+            <div class="pf-detail__body">
+              <p class="pf-detail__lead">육계기업 온라인팀에서 B2B 직매입과 B2C 채널을 함께 운영하며, 판매 채널 확장에 맞춰 풀필먼트와 데이터 연계 체계를 만들었습니다.</p>
+              <h4>함께 한 일</h4>
+              <ul><li>신제품 기획, 생산 일정·판매·재고 소진 전략 수립</li></ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="pf-case pf-post" data-cat="md" data-search="체리부로 판매량 예측 시즌 프로모션 월매출 쿠팡 광고 roas">
+        <span class="pf-avatar" aria-hidden="true">LB</span>
+        <div>
+          <div class="pf-post__head"><b>임보라</b><span>PROJECT 10</span><span>·</span><span>판매 예측 · 프로모션</span></div>
+          <h2 class="pf-post__headline">판매량 예측으로 시즌 프로모션 일정을 옮겨 최대 월매출을 만들었습니다.</h2>
+          <p class="pf-post__line"><b>문제</b>시즌 프로모션 시점을 감으로 정함</p>
+          <p class="pf-post__line is-how"><b>방법</b>판매량 예측 기반으로 프로모션 일정 조정</p>
+          <p class="pf-post__line is-result"><b>결과</b>평균 대비 3배 최대 월매출 달성</p>
+          <figure class="pf-media" aria-label="PROJECT 10 요약 이미지">
+            <div class="pf-media__head"><span>PROJECT 10 · 체리부로 · 판매 데이터 · 쿠팡 광고</span><strong>시즌 프로모션 조정</strong></div>
+            <div class="pf-media__grid"><table class="pf-media__table"><tbody><tr><th scope="row">최대 월매출</th><td>평균 대비 3배</td></tr><tr><th scope="row">쿠팡 광고 ROAS</th><td>697% → 965%</td></tr><tr><th scope="row">조정 근거</th><td>판매량 예측</td></tr></tbody></table></div>
+            <div class="pf-media__rules"><b>진행 방식</b><ol class="pf-media__steps"><li>판매량 예측</li><li>시즌 프로모션 일정 조정</li><li>쿠팡 광고 효율 개선</li></ol></div>
+          </figure>
+          <details class="pf-detail">
+            <summary>어떻게 진행했나 <svg class="pf-icon"><use href="#i-chevron"/></svg></summary>
+            <div class="pf-detail__body">
+              <p class="pf-detail__lead">판매 데이터로 수요가 몰리는 시점을 예측하고, 시즌 프로모션 일정을 그에 맞춰 조정했습니다.</p>
             </div>
           </details>
         </div>
@@ -348,6 +446,7 @@
         <a class="pf-row" href="#tabs" data-jump="4"><span class="pf-row__title">마일리지 첫 소멸 14만+ 명 · 약 2.5억 원</span><span class="pf-row__meta">PROJECT 04 · 요구사항 → 정책</span></a>
         <a class="pf-row" href="#tabs" data-jump="5"><span class="pf-row__title">어뷰징 의심 1,080명 선별, 828명 비활성화</span><span class="pf-row__meta">PROJECT 05 · 분석 → 운영 기준</span></a>
         <a class="pf-row" href="#tabs" data-jump="1"><span class="pf-row__title">반복 자료 요청 → Power BI 셀프 조회</span><span class="pf-row__meta">PROJECT 01 · BI · 확산</span></a>
+        <a class="pf-row" href="#tabs" data-jump="10"><span class="pf-row__title">판매량 예측으로 평균 대비 3배 최대 월매출</span><span class="pf-row__meta">PROJECT 10 · 판매 예측 · 프로모션</span></a>
         <a class="pf-row" href="#tabs" data-jump="6"><span class="pf-row__title">검증한 CRM 사례 72건 · 공식 출처 49개</span><span class="pf-row__meta">PROJECT 06 · 개인 프로젝트</span></a>
       </section>
 
@@ -407,20 +506,28 @@
   document.querySelectorAll('[data-jump]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       e.preventDefault();
-      select('projects');
+      select('projects'); q.value = ''; document.querySelector('.pf-filter__btn[data-cat="all"]').click();
       var el = cases[+a.getAttribute('data-jump') - 1];
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
-  var q = document.getElementById('q'), empty = document.getElementById('empty');
-  q.addEventListener('input', function () {
+  var q = document.getElementById('q'), empty = document.getElementById('empty'), cat = 'all';
+  function filter() {
     var v = q.value.trim().toLowerCase(), shown = 0;
-    select('projects');
     cases.forEach(function (c) {
+      var inCat = cat === 'all' || c.getAttribute('data-cat') === cat;
       var hit = !v || (c.getAttribute('data-search') + ' ' + c.textContent).toLowerCase().indexOf(v) > -1;
-      c.hidden = !hit; if (hit) shown++;
+      c.hidden = !(inCat && hit); if (inCat && hit) shown++;
     });
     empty.hidden = shown > 0;
+  }
+  q.addEventListener('input', function () { select('projects'); filter(); });
+  document.querySelectorAll('.pf-filter__btn').forEach(function (b, _, all) {
+    b.addEventListener('click', function () {
+      cat = b.getAttribute('data-cat');
+      Array.prototype.forEach.call(all, function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      filter();
+    });
   });
 })();
 </script>

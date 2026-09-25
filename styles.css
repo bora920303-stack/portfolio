@@ -133,6 +133,15 @@
 .pf-tab[aria-selected="true"] { color: var(--ink); font-weight: 700; }
 .pf-tab[aria-selected="true"]::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 56px; height: 4px; border-radius: var(--radius-pill); background: var(--plum); }
 
+/* ---------- Filter: category pills above the feed ---------- */
+.pf-filter { display: flex; gap: var(--space-2); padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; }
+.pf-filter::-webkit-scrollbar { display: none; }
+.pf-filter__btn { flex: none; display: inline-flex; align-items: center; gap: var(--space-1); height: 32px; padding: 0 var(--space-3); border-radius: var(--radius-pill); border: 1px solid var(--line-strong); background: var(--bg); font: inherit; font-size: 14px; font-weight: 700; color: var(--ink); cursor: pointer; white-space: nowrap; }
+.pf-filter__btn span { font-weight: 500; color: var(--muted); }
+.pf-filter__btn:hover { background: var(--surface-subtle); }
+.pf-filter__btn[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.pf-filter__btn[aria-pressed="true"] span { color: var(--bg); }
+
 /* ---------- ProfileBand ---------- */
 .pf-profile { border-bottom: 1px solid var(--line); }
 .pf-profile__band { position: relative; height: 180px; background: var(--plum-deep); overflow: hidden; }
