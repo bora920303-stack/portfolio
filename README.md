@@ -6,4 +6,7 @@
 - `styles.css` — 디자인 시스템 토큰 + 컴포넌트 스타일 + 반응형 규칙
 - `assets/` — 모자이크 처리된 화면 캡처
 
-빌드 과정이 없는 정적 사이트라 `index.html`을 브라우저로 바로 열면 됩니다. GitHub Pages에서 `main` 브랜치 루트로 배포할 수 있습니다.
+빌드 과정이 없는 정적 사이트라 `index.html`을 브라우저로 바로 열면 됩니다.
+
+- `portfolio.pdf` — 같은 내용을 16:9 PDF로 정리한 버전. 왼쪽 메뉴·목록·이전/다음을 클릭하면 해당 페이지로 이동합니다.
+- 다시 만들기: `python3 build/build_site.py` (웹), `python3 build/build_pdf.py <폰트 폴더> && node build/render_pdf.js` (PDF, Noto Sans KR TTF 필요)
